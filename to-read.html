@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-read</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>             
+        <nav> 
+            <i class="fas fa-book-open" aria-label="this is an icon"></i> 
+            <a href="index.html">About</a>
+            <a href="favourites.html">favourites</a>
+            <a class="current" href="to-read.html">to-read</a>
+            <a href="recommendation.html">recommendation</a>
+        </nav>
+    </header>
+    <!-- filtered photos with flip cards-->
+    <div class="controls">
+			<button type="button" class="control" data-filter="all">All</button>
+			<button type="button" class="control" data-filter=".mandarin">In Mandarin</button>
+			<button type="button" class="control" data-filter=".english">In English</button>
+            <button type="button" class="control" data-filter=".otherlan">In Other Languages</button>
+            <button type="button" class="control" data-filter=".fiction">Fiction</button>
+            <button type="button" class="control" data-filter=".nonfiction">Non-fiction</button>
+    </div>
+
+    <div class="container">
+    <img class="mix mandarin nonfiction" src="/images/toread-1.jpg" alt="cover of the book The Third Chimpanzee">
+    <img class="mix mandarin fiction" src="/images/toread-2.jpg" alt="cover of the book Going to School">
+    <img class="mix otherlan fiction" src="/images/toread-3.jpg" alt="cover of the book No Longer Human">
+    <img class="mix english nonfiction" src="/images/toread-4.jpg" alt="cover of the book The Design of Everyday Things">
+    <img class="mix english nonfiction" src="/images/toread-5.jpg" alt="cover of the book Quiet">
+    <img class="mix english fiction" src="/images/toread-6.jpg" alt="cover of the book The Godfather">
+    <img class="mix otherlan fiction" src="/images/toread-7.jpg" alt="cover of the book My Brilliant Friend">
+    <img class="mix english fiction" src="/images/toread-8.jpg" alt="cover of the book The Long Goodbye">
+    <img class="mix english nonfiction" src="/images/toread-9.jpg" alt="cover of the book Geek Heresy">
+    <img class="mix mandarin fiction" src="/images/toread-10.jpg" alt="cover of the book The Gate of Goats">
+    <img class="mix mandarin fiction" src="/images/toread-11.jpg" alt="cover of the book To Live">
+    <img class="mix mandarin fiction" src="/images/toread-12.jpg" alt="cover of the book Life and Death Are Wearing Me Out">
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2018-2018. All Rights Reserved.</p>
+    </div>
+
+
+    <script src="./js/mixitup.min.js"></script>
+    <script>
+        var photos = document.querySelector(".container");
+        var mixer = mixitup(photos)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>recommendation</title>
+    <link rel="stylesheet" href="./style/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script type="text/javascript">
+        function checkForm(){
+            var a = document.getElementById("yourname")
+            var b = document.getElementById("book")
+            if (a.value.length == 0)
+                {
+                    document.getElementById("nameerrormsg").style.display = "block"; a == 0;}
+               else {
+                    document.getElementById("nameerrormsg").style.display = "none";}
+    
+            if (b.value.length == 0)
+                {document.getElementById("bookerrormsg").style.display = "block"; b = 0}
+            else {document.getElementById("bookerrormsg").style.display = "none"; }
+    
+            if (b == 0 || a == 0){
+                alert("you just tried to submit a blank form :(")
+                return false;
+            }
+        }  
+        </script>
+</head>
+
+<body>
+    <header>             
+        <nav> 
+            <i class="fas fa-book-open" aria-label="this is an icon"></i> 
+            <a href="index.html">About</a>
+            <a href="favourites.html">favourites</a>
+            <a href="to-read.html">to-read</a>
+            <a class="current" href="recommendation.html">recommendation</a>
+        </nav>
+    </header>
+
+    <div class="formstyle">
+    <form action="Recommendation" onsubmit="return checkForm();">
+        <fieldset>
+            <legend>Your Recommendation</legend>
+            <label for="yourname">Your Name</label>
+            <input type="text" name="yourname" id="yourname">
+            <p class="errormsg" id="nameerrormsg">Please enter your name.</p>
+
+            <label for="book">Name of the book(s) you would like to recommend.</label>
+            <input type="text" name="book" id="book">
+            <p class="errormsg" id="bookerrormsg">Please enter the name of the book.</p>
+
+            <labe for="reason">Why do you want Esme to read this book?</labe>
+            <textarea name="reason" id="reason" rows="5" cols="100" placeholder="What did you like about this book? Tell me everything!"></textarea>
+        </fieldset>
+        <input type="submit" id="submitbutton" value="I'M READY TO SUBMIT!">
+    </form>
+    </div>
+    <div class="footer">
+            <p>Copyright &copy; 2018-2018. All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>

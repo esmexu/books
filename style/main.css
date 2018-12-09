@@ -1,0 +1,158 @@
+
+body {
+    background-color: antiquewhite;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    font-family: "Roboto", Arial, sans-serif;
+    color: black;
+}
+img {
+    height: 60vh;
+    padding: 10px;
+}
+header {
+    margin: 20px 20px 30px 20px;
+}
+
+/*navigation bar*/
+nav {
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+nav a {
+    text-decoration: none;
+    position: relative;
+    font-size: 12px;
+    padding: 14px 12px;
+    color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; 
+}
+nav a:hover {
+    background-color: lightgoldenrodyellow;
+}
+nav a.current {
+    font-weight: bold;
+}
+
+/*grid layout*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+
+/*carousel on "favourite" page*/
+#myCarousel {
+    width: 700px; 
+    margin: 0 auto
+}
+
+/*buttons on "to-read" page*/
+.controls {
+    position: fixed;
+    top: 20%;
+    right:5%;
+}
+.controls button {
+    display: block;
+    padding:0.5em 0.5em;
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:400;
+    color:rgb(158, 153, 153);
+    text-align:center;
+    transition: all 0.15s;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+button:hover {
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+button:active {
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+@media all and (max-width:30em) {
+    button {
+        display: block;
+        margin:0.4em auto;
+    }
+}
+
+/* the error messages on "recommendation" page*/
+.errormsg { 
+    color:red;
+    /*font: Use a Google font*/
+    display:none; }
+.formstyle {
+    max-width: 80%;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	border-radius: 8px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+.formstyle fieldset {
+    border: none;
+}
+.formstyle legend {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto", Arial, sans-serif;
+}
+label, input, textarea {
+    display: block;
+}
+input {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+#submitbutton {
+    border: none;
+	padding: 8px 15px 8px 15px;
+	background: antiquewhite;
+	color: black;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+    
+/* footer */
+.footer {
+    font-size: 12px;
+    margin: 30px 10px 10px;
+    text-align: center;
+}
+

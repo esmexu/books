@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-read</title>
     <link rel="stylesheet" href="./style/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
+    <a href="#toreadcontent" class="skip">Skip to content</a>
     <header>             
         <nav> 
             <i class="fas fa-book-open" aria-label="this is an icon"></i> 
@@ -23,7 +24,7 @@
         </nav>
     </header>
     <!-- filtered photos with flip cards-->
-    <div class="controls">
+    <div id="toreadcontent" class="controls">
 			<button type="button" class="control" data-filter="all">All</button>
 			<button type="button" class="control" data-filter=".mandarin">In Mandarin</button>
 			<button type="button" class="control" data-filter=".english">In English</button>
@@ -32,6 +33,7 @@
             <button type="button" class="control" data-filter=".nonfiction">Non-fiction</button>
     </div>
 
+<div class="grid-container">
     <div class="container">
     <img class="mix mandarin nonfiction" src="./images/toread-1.jpg" alt="cover of the book The Third Chimpanzee">
     <img class="mix mandarin fiction" src="./images/toread-2.jpg" alt="cover of the book Going to School">
@@ -46,10 +48,17 @@
     <img class="mix mandarin fiction" src="./images/toread-11.jpg" alt="cover of the book To Live">
     <img class="mix mandarin fiction" src="./images/toread-12.jpg" alt="cover of the book Life and Death Are Wearing Me Out">
     </div>
+</div>
 
-    <div class="footer">
+<footer class="footer">
+        <a href="https://www.facebook.com/profile.php?id=100004265921885"  aria-label="Esme's Facebook Page">
+            <i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/esme-xuecong-xu-59a08712b/" aria-label="Esme's LinkedIn Profile">
+            <i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://www.instagram.com/xuxuecong/?hl=en" aria-label="Esme's Instagram Account">
+            <i class="fab fa-instagram fa-2x"></i></a>
         <p>Copyright &copy; 2018-2018. All Rights Reserved.</p>
-    </div>
+</footer>
 
 
     <script src="./js/mixitup.min.js"></script>

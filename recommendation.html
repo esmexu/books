@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>recommendation</title>
     <link rel="stylesheet" href="./style/main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script type="text/javascript">
         function checkForm(){
             var a = document.getElementById("yourname")
@@ -26,11 +26,16 @@
                 alert("you just tried to submit a blank form :(")
                 return false;
             }
+            else {
+                alert("Thank you for your recommendation!")
+                return true;
+            }
         }  
         </script>
 </head>
 
 <body>
+    <a href="#formcontent" class="skip">Skip to content</a>
     <header>             
         <nav> 
             <i class="fas fa-book-open" aria-label="this is an icon"></i> 
@@ -42,7 +47,7 @@
     </header>
 
     <div class="formstyle">
-    <form action="Recommendation" onsubmit="return checkForm();">
+    <form id="formcontent" action="Recommendation" onsubmit="return checkForm();">
         <fieldset>
             <legend>Your Recommendation</legend>
             <label for="yourname">Your Name</label>
@@ -53,15 +58,22 @@
             <input type="text" name="book" id="book">
             <p class="errormsg" id="bookerrormsg">Please enter the name of the book.</p>
 
-            <labe for="reason">Why do you want Esme to read this book?</labe>
+            <label for="reason">Why do you want Esme to read this book?</labe>
             <textarea name="reason" id="reason" rows="5" cols="100" placeholder="What did you like about this book? Tell me everything!"></textarea>
         </fieldset>
         <input type="submit" id="submitbutton" value="I'M READY TO SUBMIT!">
     </form>
     </div>
-    <div class="footer">
+    <footer class="footer">
+            <a href="https://www.facebook.com/profile.php?id=100004265921885"  aria-label="Esme's Facebook Page">
+                <i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/esme-xuecong-xu-59a08712b/" aria-label="Esme's LinkedIn Profile">
+                <i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://www.instagram.com/xuxuecong/?hl=en" aria-label="Esme's Instagram Account">
+                <i class="fab fa-instagram fa-2x"></i></a>
             <p>Copyright &copy; 2018-2018. All Rights Reserved.</p>
-    </div>
+    </footer>
+
 </body>
 
 </html>

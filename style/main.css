@@ -221,6 +221,9 @@ nav a.current {
   }
 
 /*"TO READ" page*/
+.booklist {
+    margin-left: 7%;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */

@@ -35,8 +35,9 @@
 </head>
 
 <body>
-    <a href="#formcontent" class="skip">Skip to content</a>
-    <header>             
+    
+    <header>           
+    <a href="#formcontent" class="skip">Skip to content</a>  
         <nav> 
             <i class="fas fa-book-open" aria-label="this is an icon"></i> 
             <a href="index.html">About</a>
@@ -46,8 +47,9 @@
         </nav>
     </header>
 
+    <main id="main">
     <div class="formstyle">
-    <form id="formcontent" action="Recommendation" onsubmit="return checkForm();">
+    <form id="formcontent" action="https://formspree.io/xuecong@umich.edu" method="POST" onsubmit="return checkForm();">
         <fieldset>
             <legend>Your Recommendation</legend>
             <label for="yourname">Your Name</label>
@@ -64,6 +66,7 @@
         <input type="submit" id="submitbutton" value="I'M READY TO SUBMIT!">
     </form>
     </div>
+</main>
     <footer class="footer">
             <a href="https://www.facebook.com/profile.php?id=100004265921885"  aria-label="Esme's Facebook Page">
                 <i class="fab fa-facebook fa-2x"></i></a>

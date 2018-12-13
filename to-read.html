@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-read</title>
-    <link rel="stylesheet" href="./style/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/modal.js"></script>
+  
 
 </head>
 
 <body>
-    <a href="#toreadcontent" class="skip">Skip to content</a>
     <header>             
+        <a href="#toreadcontent" class="skip">Skip to content</a>
         <nav> 
             <i class="fas fa-book-open" aria-label="this is an icon"></i> 
             <a href="index.html">About</a>
@@ -23,6 +26,7 @@
             <a href="recommendation.html">recommendation</a>
         </nav>
     </header>
+    <main id="main">
     <!-- filtered photos with flip cards-->
     <div id="toreadcontent" class="controls">
 			<button type="button" class="control" data-filter="all">All</button>
@@ -35,7 +39,7 @@
 
 <div class="grid-container">
     <div class="container">
-    <img class="mix mandarin nonfiction" src="./images/toread-1.jpg" alt="cover of the book The Third Chimpanzee">
+    <img id="myBtn" class="mix mandarin nonfiction" src="./images/toread-1.jpg" alt="cover of the book The Third Chimpanzee">
     <img class="mix mandarin fiction" src="./images/toread-2.jpg" alt="cover of the book Going to School">
     <img class="mix otherlan fiction" src="./images/toread-3.jpg" alt="cover of the book No Longer Human">
     <img class="mix english nonfiction" src="./images/toread-4.jpg" alt="cover of the book The Design of Everyday Things">
@@ -49,6 +53,34 @@
     <img class="mix mandarin fiction" src="./images/toread-12.jpg" alt="cover of the book Life and Death Are Wearing Me Out">
     </div>
 </div>
+</main>
+
+<!-- BOOTSTRAP
+<div id="myModal1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+            <h4 class="modal-title">The Third Chimpanzee</h4>
+        </div>
+        <div class="modal-body">
+            <p>This is a book about...</p>
+        </div>
+    </div>
+    </div>
+    </div>
+-->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
+        </div>
+      
+      </div>
 
 <footer class="footer">
         <a href="https://www.facebook.com/profile.php?id=100004265921885"  aria-label="Esme's Facebook Page">
